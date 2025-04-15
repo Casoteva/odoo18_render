@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     git gcc python3-dev libpq-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev libssl-dev libjpeg-dev libjpeg62-turbo-dev libpng-dev libxslt-dev libzip-dev zlib1g-dev build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-COPY ./odoo /odoo
+COPY . /odoo
 
 RUN pip install --upgrade pip
 
