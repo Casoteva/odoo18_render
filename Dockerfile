@@ -13,4 +13,4 @@ RUN pip install --upgrade pip
 
 EXPOSE 8069
 
-CMD ["python3", "odoo-bin", "-c", "/odoo/odoo.conf"]
+CMD ["python3", "/odoo/odoo-bin", "serve"]
